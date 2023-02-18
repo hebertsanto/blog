@@ -1,0 +1,30 @@
+.cardWeek{
+    height: 350px;
+    margin: 3vh auto;
+    width: 60%;
+    border: 1px solid rgba(233, 233, 233, 0.162);
+    display: flex;
+}
+.cardWeek:hover{
+    box-shadow: 2px 2px 2px rgba(246, 244, 244, 0.152);
+    transition: .10ms;
+    background-color: rgba(234, 233, 233, 0.232);
+}
+.card{
+    width: 1000px;
+    display: flex;  
+    margin-top: 20px
+}
+.img{
+    margin-left: 30px;
+    height: 300px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.linkPost{
+    color: rgb(35, 35, 35);
+    text-decoration: none;
+}
+.info{
+    margin-left: 40px;
+}

@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7vh;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.422);
+}
+.navList{
+    display: flex;
+}
+.navList li{
+    margin: 10px;
+    list-style: none;
+}
+.navList li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
