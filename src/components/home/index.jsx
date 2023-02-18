@@ -1,13 +1,15 @@
-import { Container } from "../../container"
+
 import style from './home.module.css'
-import { Card } from "../card"
+import {Card} from '../card'
 import { PostWeek } from "../../postWeek"
+import  {Container} from "@mui/material"
+import { New } from '../new'
 
 export const Home = () => {
     return(
-        <Container ClassContainer={style.home}>
+        <Container className={style.home}>
            <Card post={PostWeek}/>
-
+            <New/>
         </Container>
     )
 }

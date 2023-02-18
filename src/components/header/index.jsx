@@ -1,7 +1,7 @@
 import React from "react";
 import style from './Header.module.css';
 import { Link } from "react-router-dom";
-
+import { SocialMedia } from "../sociaMedia";
 export const Header = () => {
     return (
         <header className={style.header}>
@@ -19,6 +19,7 @@ export const Header = () => {
                     <Link to='/'>contact</Link>
                 </li>
             </nav>
+            <SocialMedia />
         </header>
     )
 }
