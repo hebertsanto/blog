@@ -1,0 +1,11 @@
+.subHeader{
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.492);
+}
+.subHeader a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}

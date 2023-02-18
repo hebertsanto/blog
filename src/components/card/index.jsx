@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom"
 import style from './card.module.css'
-import Container  from "@mui/material/Container"
+import Container from "@mui/material/Container"
+import { Typography } from "@mui/material"
 
 export const Card = ({ post }) => {
     return (
         <Container maxWidth="lg">
+            <Typography variant="div" component="div" mt={0}>
                 {post.map((item, index) => (
                     <Link to={`/post/${item.id}`} key={item.id} className={style.linkPost}>
                         <div className={style.card}>
@@ -23,7 +25,7 @@ export const Card = ({ post }) => {
                         </div>
                     </Link>
                 ))}
+            </Typography>
         </Container>
-
     )
 }

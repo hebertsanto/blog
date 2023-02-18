@@ -1,16 +1,19 @@
 .cardWeek{
-    height: 350px;
+    height: 450px;
     width: 800px;
     margin: 3vh auto;
     width: 60%;
 
 }
 .img{
-    height: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 330px;
     border-radius: 3px;
     object-fit: cover;
 }
 .info{
+    margin-top: 20px;
     color: black;
     margin-left: 30px;
 }
@@ -19,7 +22,8 @@
     text-decoration: none;
 }
 .card{
-    width: 900px;
+    height: 370px;
+    width: 1000px;
     margin-top: 10px;
     display: flex;
 }
