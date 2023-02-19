@@ -5,7 +5,7 @@ export const LinkComponent = ({to, children}) => {
 
     return (
         <>
-        <Link to={to} className={Location.pathname == to ? style.underline : false}>
+        <Link to={to} className={Location.pathname == to ? style.underline: undefined}>
             {children}
         </Link>
         </>

@@ -9,8 +9,7 @@ export const DefautPage = () => {
     return(
         <div className={style.main}>
             <Header />
-            <SubHeader
-            />
+            <SubHeader/>
             <Outlet />
             <Footer />
         </div>

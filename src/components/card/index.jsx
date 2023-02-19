@@ -5,7 +5,7 @@ import { Typography } from "@mui/material"
 
 export const Card = ({ post }) => {
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" className={style.container}>
             <Typography variant="div" component="div" mt={0}>
                 {post.map((item, index) => (
                     <Link to={`/post/${item.id}`} key={item.id} className={style.linkPost}>

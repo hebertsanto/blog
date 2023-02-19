@@ -8,7 +8,7 @@ export const Home = () => {
     return(
         <Container className={style.home}>
            <Card post={PostWeek} />
-            <New/>
+            <New />
         </Container>
     )
 }
