@@ -3,6 +3,7 @@ import style from './card.module.css'
 import Container from "@mui/material/Container"
 import { Typography } from "@mui/material"
 
+
 export const Card = ({ post }) => {
     return (
         <Container maxWidth="lg" className={style.container}>

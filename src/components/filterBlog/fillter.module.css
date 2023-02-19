@@ -1,0 +1,20 @@
+.fillter{
+    position: fixed ;
+    height: 200px;
+}
+.fillterContainer li{
+    height: 30px;
+    width: 150px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 20px;
+    list-style: none;
+}
+.fillterContainer li a{
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+    font-size: 1.1rem;
+}
+.fillterContainer li a:hover{
+    color: black;
+}

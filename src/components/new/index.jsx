@@ -7,7 +7,7 @@ export const New = () => {
     return (
         <Container maxWidth="lg">
             <Typography variant="h4" component="h4" mt={7}>
-               recents news here...
+                recents Articles...
             </Typography>
             <RecentNewPost newpost={PostBlogContent} />
         </Container>

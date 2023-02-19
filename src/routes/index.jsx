@@ -5,6 +5,7 @@ import { Home } from '../components/home';
 import { Blog } from './blog';
 import { Contact } from './contact';
 import { About } from './about';
+import { PostId } from '../components/PostId';
 
 export const AppRoutes = () => {
     return(
@@ -16,6 +17,7 @@ export const AppRoutes = () => {
                      <Route path='/contact' element={<Contact />}/>
                      <Route path='/about' element={<About />}/>
                 </Route>
+                <Route path='/post/:id' element={<PostId />}/>
             </Routes>
         </Router>
     )
