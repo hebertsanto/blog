@@ -17,7 +17,7 @@ export const AppRoutes = () => {
                      <Route path='/contact' element={<Contact />}/>
                      <Route path='/about' element={<About />}/>
                 </Route>
-                <Route path='/post/:id' element={<PostId />}/>
+                <Route path='/post/:categoria' element={<PostId />}/>
             </Routes>
         </Router>
     )

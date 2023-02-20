@@ -1,6 +1,6 @@
+import { createSlice } from "@reduxjs/toolkit";
 import {v4 as uuid} from 'uuid'
-
-export const PostBlogContent = [
+const initialState = [
     {
         id:uuid(),
         title:'the new title',
@@ -23,3 +23,8 @@ export const PostBlogContent = [
         favorite:false,
     }
 ]
+const NewsArticleSlice = createSlice({
+    name: 'newsArticle',
+    initialState
+})
+export default NewsArticleSlice.reducer;

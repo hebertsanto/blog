@@ -1,7 +1,11 @@
+import { AboutComponent } from "../../components/aboutComponeont"
+import { Container } from "@mui/material"
+import style from './about.module.css'
+
 export const About = () => {
     return(
-        <div>
-            <h1>rota about</h1>
-        </div>
+        <Container className={style.containerAbout} >
+            <AboutComponent />
+        </Container>
     )
 }

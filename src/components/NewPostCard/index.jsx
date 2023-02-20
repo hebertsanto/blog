@@ -1,19 +1,16 @@
-import { Link } from "react-router-dom";
 import { Container } from "@mui/material";
 import style from './newpost.module.css';
+import { PostItem } from "../PostItem";
 
 export const RecentNewPost = ({ newpost }) => {
+
+    const RECENTS_NEW_TITLE = "Recent Posts";
     return (
         <Container className={style.NewPost}>
-
-            <h4>recents news</h4>
+            <h4>{RECENTS_NEW_TITLE}</h4>
+    
             {newpost.map((item) => (
-                <Link to="/" key={item.id} className={style.linkContainer}>
-                    <div className={style.info}>
-                        <h1>{item.title}</h1>
-                        <p>{item.content}</p>   
-                    </div>
-                </Link>
+                <PostItem key={item.id} post={item} />
             ))}
 
         </Container>

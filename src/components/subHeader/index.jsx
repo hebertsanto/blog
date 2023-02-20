@@ -1,5 +1,6 @@
 import style from './subHeader.module.css'
-import { LinkComponent } from './link';
+import { LinkComponent } from './linkSubHeader'
+
 
 export const SubHeader = () => {
     return (

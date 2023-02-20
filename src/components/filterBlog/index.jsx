@@ -1,5 +1,5 @@
 import style from './fillter.module.css';
-import { LinkComponent } from '../subHeader/link';
+import { LinkComponent } from '../subHeader/linkSubHeader';
 
 export const FillterBlog = () => {
     return(
@@ -11,12 +11,12 @@ export const FillterBlog = () => {
                     </LinkComponent>
                 </li>
                 <li>
-                    <LinkComponent to="/programming">
+                    <LinkComponent to="/post/programming">
                         programming
                     </LinkComponent>
                 </li>
                 <li>
-                    <LinkComponent to="/devops">
+                    <LinkComponent to="/post/devops">
                         devops
                     </LinkComponent>
                 </li>
