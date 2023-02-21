@@ -7,17 +7,39 @@
     display: flex;
 }
 .divBlog{
+    border-left: 1px solid rgba(220, 220, 220, 0.72);
     width: 100%;
-    padding-left: 20px;
+    padding-left: px;
     height: 190vh;
-    border-left: 1px solid rgba(220, 220, 220, 0.452);
     margin-left: 10vw;
 }
 .divBlog .titleBlog{
+    margin-left: 17px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     position: sticky;
     top: 0vh;
     background-color: #fff;
     border-bottom: 1px solid rgba(238, 237, 237, 0.34);
     box-shadow: 2px 2px 2px rgba(246, 246, 246, 0.202);
     width: 100%;
+}
+.allBlogs{  
+    margin-top: 20px;
+    padding-left: 30px;
+    height: auto;
+    border-bottom: 1px solid rgba(202, 200, 200, 0.301);
+}
+.allBlogs:hover{
+    transition: .9ms;
+    background-color: rgba(220, 220, 220, 0.153);
+}
+.allBlogs a{
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+}
+.content{
+
+    color: rgb(65, 65, 65);
 }

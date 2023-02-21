@@ -3,7 +3,7 @@ import style from './blog.module.css'
 import { FillterBlog } from "../../components/filterBlog"
 import { useSelector } from "react-redux"
 import { Link } from "react-router-dom"
-
+import Typography from "@mui/material/Typography"
 
 export const Blog = () => {
     const blog = useSelector(state => state.postBlog)
@@ -14,17 +14,19 @@ export const Blog = () => {
                 <FillterBlog />
                 <div className={style.divBlog}>
                     <div className={style.titleBlog}>
-                        <h1>Blog teste</h1>
+                        <Typography variant="h4" component="h4">
+                            The Best Blog
+                        </Typography>
                     </div>
-                    <div className={style.blogContent}>
-                        <h3>here are the blogs</h3>
-                    </div>
-                    <div className="allBlogs">
+                    <div className={style.container}>
                         {blog.map((post) => (
-                            <Link to={`/blog/post/${post.id}`} key={post.id}> 
-                                <h2>{post.title}</h2>
-                                <span>{post.content}</span>
-                            </Link>
+                            <div className={style.allBlogs}>
+                                <Link to={`/blog/post/${post.id}`} key={post.id}>
+                                    <Typography variant="h4">{post.title}</Typography>
+                                    <Typography variant="body1" className={style.content}>{post.content}</Typography>
+                                </Link>
+                            </div>
+
                         ))}
                     </div>
                 </div>

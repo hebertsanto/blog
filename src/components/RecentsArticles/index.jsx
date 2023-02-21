@@ -1,17 +1,13 @@
-import { Container } from "@mui/material"
-import { Title } from "../Title"
 import { RecentNewPost } from "../NewPostCard"
-import { useSelector } from "react-redux";
+import { useSelector } from "react-redux"
 
+export const RecentesArticles = () => {
 
-export const RecentArticles  = () => {
-    const mt = 2;
-    const articles = useSelector(state => state.recentsArticles)
-    
-    return (
-        <Container maxWidth="lg">
-            <Title Variant={`h4`} MarginTop={mt}>New Posts</Title>
-            <RecentNewPost newpost={articles} />
-        </Container>
+     const New = useSelector(state => state.recentsArticles)
+     
+     return(
+        <div>
+            <RecentNewPost newpost={New}/>
+        </div>
     )
 }

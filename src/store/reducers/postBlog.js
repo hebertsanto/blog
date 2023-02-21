@@ -6,7 +6,34 @@ const initialState = [
         thumbnail:'url aqui',
         title:'título aqui',
         content:'conteúdo aqui',
-
+        favorite:false,
+    },
+    {
+        id:uuid(),
+        thumbnail:'url aqui',
+        title:'título aqui',
+        content:'conteúdo aqui',
+        favorite:false,
+    },
+    {
+        id:uuid(),
+        thumbnail:'url aqui',
+        title:'título aqui',
+        content:'conteúdo aqui',
+        favorite:false,
+    },
+    {
+        id:uuid(),
+        thumbnail:'url aqui',
+        title:'título aqui',
+        content:'conteúdo aqui',
+        favorite:false,
+    },
+    {
+        id:uuid(),
+        thumbnail:'url aqui',
+        title:'título aqui',
+        content:'conteúdo aqui',
         favorite:false,
     }
 ]
